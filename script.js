@@ -8,12 +8,12 @@ window.addEventListener('DOMContentLoaded', () => {
       scores[team]++;
       btn.parentElement.querySelectorAll('button').forEach(b => b.disabled = true);
 
-      // Check if all 3 questions are answered (6 buttons disabled)
+      
       if (document.querySelectorAll('.quiz-question button:disabled').length === 6) {
         const resultBox = document.getElementById('quiz-result');
         let message = "";
 
-        // Decide winner message
+       
         if (scores.mom > scores.silvynn) {
           message = "💜 You're Team Mom! Cozy, crafty, and totally classic.";
         } else if (scores.silvynn > scores.mom) {
@@ -22,13 +22,13 @@ window.addEventListener('DOMContentLoaded', () => {
           message = "🌈 You're a perfect mix of both! A true mommy & me blend!";
         }
 
-        // Display result with retry button
+        
         resultBox.innerHTML = `
           <p class="quiz-message">${message}</p>
           <button class="retry-btn">🔁 Try Again</button>
         `;
 
-        // Add confetti emojis
+       
         for (let i = 0; i < 30; i++) {
           const confetti = document.createElement('span');
           confetti.className = 'confetti';
@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
           document.body.appendChild(confetti);
         }
 
-        // Add reload function to retry button
+        
         document.querySelector('.retry-btn').addEventListener('click', () => {
           location.reload();
         });

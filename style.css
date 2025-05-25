@@ -17,7 +17,7 @@ h1, h2 {
   color: #333;
 }
 
-/* Navbar */
+
 .navbar {
   background: rgb(255, 255, 255);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -63,7 +63,7 @@ h1, h2 {
   color: #ff69b4;
 }
 
-/* Main Container */
+
 .container {
   max-width: 1200px;
   margin: 8rem auto 2rem auto;
@@ -215,8 +215,7 @@ h1, h2 {
 }
 
 .photo-grid {
-  column-count: 3; /* Adjust to 2 or 4 depending on screen size */
-  column-gap: 1rem;
+  column-count: 3; 
   padding: 1rem;
 }
 
@@ -243,7 +242,7 @@ h1, h2 {
 .gallery-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5rem 1rem 2rem; /* Add top padding to push content below navbar */
+  padding: 5rem 1rem 2rem;
   text-align: center;
 }
 
@@ -432,7 +431,7 @@ body {
   font-family: 'Nunito', sans-serif;
   background: linear-gradient(135deg, #ffd5ec, #d5f4ff, #e0ffd5);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 8s ease infinite;
   color: #333;
   margin: 0;
   padding: 0;
@@ -485,7 +484,7 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-  color: #8e44ad; /* purple for active page */
+  color: #8e44ad; 
 }
 
 main.project-container {
@@ -559,4 +558,21 @@ iframe {
   background-color: #4ab48c;
   color: white;
   transform: scale(1.05);
+}
+
+body {
+  background: linear-gradient(135deg, #ffd5ec, #d5f4ff, #e0ffd5);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  -webkit-animation: gradient 15s ease infinite;
+}
+@-webkit-keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+html, body {
+  min-height: 100vh;
 }
