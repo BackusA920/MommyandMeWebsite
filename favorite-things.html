@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Favorite Things</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <h1>Mommy & Me Coding Corner</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adventures.html">Adventures</a></li>
+        <li><a href="favorite-things.html" class="active">Favorite Things</a></li>
+        <li><a href="silvynn-project/index.html">Silvynn's Project</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="favorites-container">
+    <h2 class="favorites-heading">Our Favorite Things</h2>
+
+    <div class="favorites-grid">
+      <section class="favorite-card">
+        <img src="assets/Mommy.jpg" class="avatar" id="mom-avatar" alt="Mom's photo">
+        <h3>💜 Mom's Favorites</h3>
+        <ul>
+          <li><strong>Food:</strong> 🍫 Reese's</li>
+          <li><strong>Game:</strong> 🎮 League of Legends</li>
+          <li><strong>Drink:</strong> 🥤 Caffeine-Free Soda</li>
+          <li><strong>Animal:</strong> 🦛 Hippo</li>
+          <li><strong>Color:</strong> 💜 Purple</li>
+          <li><strong>Song:</strong> 🎧 "Lose Control" by Teddy Swims</li>
+          <li><strong>Season:</strong> 🌸 Spring & 🍁 Fall</li>
+          <li><strong>Outdoor Activity:</strong> 🚶‍♀️ Walking</li>
+          <li><strong>Hobby:</strong> ✂️ Arts & Crafts</li>
+          <li><strong>Time of Day:</strong> 🌃 Night</li>
+          <li><strong>City:</strong> 🏖️ Sheboygan</li>
+          <li><strong>Restaurant:</strong> 🍱 Kiku's</li>
+        </ul>
+      </section>
+
+      <section class="favorite-card">
+        <img src="assets/Silvynn.jpg" class="avatar" id="silvynn-avatar" alt="Silvynn's photo">
+        <h3>💚 Silvynn's Favorites</h3>
+        <ul>
+          <li><strong>Food:</strong> 🍔 Hamburger Helper</li>
+          <li><strong>Game:</strong> 💻 Click the Apple (PC Version)</li>
+          <li><strong>Drink:</strong> 🧃 Fanta</li>
+          <li><strong>Animal:</strong> 🐷 Pig</li>
+          <li><strong>Color:</strong> 🟩 Light Green</li>
+          <li><strong>Song:</strong> 🎶 "Barely Breathing by ATN"</li>
+          <li><strong>Season:</strong> 🌞 Summer</li>
+          <li><strong>Outdoor Activity:</strong> 🛝 Park/Swing</li>
+          <li><strong>Hobby:</strong> 💻 Coding</li>
+          <li><strong>Time of Day:</strong> 🕒 When I Can Code</li>
+          <li><strong>City:</strong> 🏙️ Manitowoc</li>
+          <li><strong>Restaurant:</strong> 🌶️ Ring of Fire</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="personality-quiz">
+      <h3>🤔 Which One Are You? Mom or Silvynn?</h3>
+
+      <div class="quiz-question">
+        <p>1. What's your favorite drink?</p>
+        <button data-team="silvynn">🧃 Juice</button>
+        <button data-team="mom">🥤 Soda</button>
+      </div>
+
+      <div class="quiz-question">
+        <p>2. What sounds more fun?</p>
+        <button data-team="silvynn">🛝 Playing at the park</button>
+        <button data-team="mom">✂️ Crafting something cool</button>
+      </div>
+
+      <div class="quiz-question">
+        <p>3. Which one makes you say “YUM”?</p>
+        <button data-team="silvynn">🍕 Hamburger Helper</button>
+        <button data-team="mom">🍫 Reese's</button>
+      </div>
+
+      <div class="quiz-result" id="quiz-result"></div>
+    </div>
+  </main>
+
+  
+  <script src="script.js"></script>
+<footer class="site-footer">
+  <p>© 2025 The Code Garden <br> April Backus · Web Developer</p>
+  <p>
+    <a href="mailto:seren.studios@gmail.com">Contact</a> |
+    <a href="https://github.com/BackusA920" target="_blank">GitHub</a> |
+    <a href="https://github.com/BackusA920/portfolio" target="_blank">Portfolio</a>
+  </p>
+
+  <a href="javascript:history.back()" class="fixed-back-btn" title="Go Back">← Back</a>
+
+</body>
+</html>
+
