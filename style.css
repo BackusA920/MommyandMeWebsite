@@ -102,19 +102,28 @@ h1, h2 {
   border: 3px solid #ffa5b5;
 }
 
-/* Animation */
+
 @keyframes gradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
   }
 
+  @media (max-width: 768px) {
+  .gallery-container h2 {
+    margin-top: 6rem; 
+  }
+
+  .gallery-container {
+    padding-top: 2rem; 
+  }
+}
   .nav-content {
     flex-direction: column;
     align-items: center;
@@ -575,4 +584,57 @@ body {
 
 html, body {
   min-height: 100vh;
+}
+
+/* Lightbox container */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  align-items: center;
+  justify-content: center;
+}
+
+/* Lightbox image */
+.lightbox-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 12px;
+  animation: zoomIn 0.3s ease;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #ff69b4;
+}
+
+/* Optional animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
