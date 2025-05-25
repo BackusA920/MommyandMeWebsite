@@ -758,7 +758,7 @@ main.container {
 }
 
 .contact-box {
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   padding: 2rem;
@@ -803,7 +803,8 @@ main.container {
 
 @media (max-width: 768px) {
   .contact-box {
-    margin: 3rem 1rem;
+    margin: 5rem 1rem;
+    margin-top: 8rem;
     padding: 1.5rem;
     width: auto;
   }
@@ -820,4 +821,7 @@ main.container {
   }
 }
 
+body {
+  padding-top: 50px; 
+}
 
