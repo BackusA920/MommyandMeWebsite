@@ -586,7 +586,7 @@ html, body {
   min-height: 100vh;
 }
 
-/* Lightbox container */
+
 .lightbox {
   display: none;
   position: fixed;
@@ -601,7 +601,7 @@ html, body {
   justify-content: center;
 }
 
-/* Lightbox image */
+
 .lightbox-content {
   display: block;
   margin: auto;
@@ -611,7 +611,7 @@ html, body {
   animation: zoomIn 0.3s ease;
 }
 
-/* Close button */
+
 .close-btn {
   position: absolute;
   top: 20px;
@@ -627,7 +627,7 @@ html, body {
   color: #ff69b4;
 }
 
-/* Optional animation */
+
 @keyframes zoomIn {
   from {
     transform: scale(0.8);
